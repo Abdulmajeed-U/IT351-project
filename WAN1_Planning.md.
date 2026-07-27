@@ -1,0 +1,8 @@
+WAN 1 Setup - Main Campus
+Prepared by: Abduldaem
+
+I started working on the Main Campus network (WAN 1). My plan is to set up two LANs:
+- LAN 1 for the Computer Lab using the 172.16.10.0 network.
+- LAN 2 for the Admin Office using the 172.16.20.0 network.
+
+I have already installed Cisco Packet Tracer and verified that it is working correctly on my machine. My next step is to drag the Router (1841 or 1941) and connect it to the switches to start the topology design. I will use Router 1 as the gateway for both LANs.
