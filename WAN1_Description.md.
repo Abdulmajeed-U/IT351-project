@@ -1,0 +1,10 @@
+WAN 1 Design and Configuration (Main Campus)
+1. Network Topology Overview:
+The Main Campus network (WAN 1) is designed to support two primary functional areas: the Computer Lab (LAN 1) and the Admin Office (LAN 2). The infrastructure utilizes a Cisco 1941 Router as the central gateway for the campus. This router is connected to two Cisco 2960 Switches, each dedicated to one of the LANs. In strict accordance with the project requirements, each LAN is equipped with three end devices (PCs) to simulate a realistic department environment. Copper straight-through cabling is used for all internal LAN connections to ensure high-speed Ethernet performance.
+2. IP Addressing Strategy:
+A systematic IP addressing plan has been implemented to ensure clear network segmentation and ease of management:
+LAN 1 (Computer Lab): Utilizes the network range 172.16.10.0/24. The router interface is configured with 172.16.10.1 as the default gateway. The three PCs are assigned IP addresses: 172.16.10.2, 172.16.10.3, and 172.16.10.4.
+LAN 2 (Admin Office): Utilizes the network range 172.16.20.0/24. The router interface is configured with 172.16.20.1 as the default gateway. The three PCs are assigned IP addresses: 172.16.20.2, 172.16.20.3, and 172.16.20.4.
+WAN Link: The serial interface for inter-campus communication is pre-configured with the IP 10.10.10.1/30 to allow future connectivity with the Branch Campus (WAN 2).
+3. Implementation Status:
+The physical topology has been successfully built in Cisco Packet Tracer. All local interfaces (GigabitEthernet 0/0 and 0/1) have been activated using the no shutdown command, and local connectivity within each LAN has been verified.
